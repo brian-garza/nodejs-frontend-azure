@@ -29,7 +29,7 @@ jobs:
           npm run build --if-present
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: node-app
           path: .
@@ -66,3 +66,4 @@ jobs:
       - name: logout
         run: |
           az logout
+
