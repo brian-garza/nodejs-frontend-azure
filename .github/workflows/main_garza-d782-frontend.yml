@@ -43,7 +43,7 @@ jobs:
 
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: node-app
       - uses: azure/login@v1
@@ -66,4 +66,5 @@ jobs:
       - name: logout
         run: |
           az logout
+
 
